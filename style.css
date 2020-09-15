@@ -59,6 +59,11 @@ body {
     color: #817a8b;
     
 }
+
+.social-sup a {
+	margin-left:10px; 
+}
+
 .card-box .icon {
     position: absolute;
     top: auto;

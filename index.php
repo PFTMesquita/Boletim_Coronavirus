@@ -22,6 +22,7 @@
     <script src="./bootstrap/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 
   
 
@@ -30,7 +31,8 @@
 
 </head>
 <body>
-
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v8.0" nonce="9gdaVeOT"></script>
 
     <header  class="conteiner-fluid ">
     <div class="header-content text-center align-middle">
@@ -149,8 +151,9 @@
 
                 <div class="cards  d-flex justify-content-around ">
                 
-                    <h1 class="display-4">Ultimos dados (Mesquita/RJ)</h1>
-                    
+                <h1 class="display-4">Ultimos dados (Mesquita/RJ)<br><a style="color: #3e276a; font-size:16px" href="http://coronavirus.mesquita.rj.gov.br/coronaapp1_list.php">Fonte dos dados: coronavirus.mesquita</a>
+		<p style="color: #ff0000; font-size:16px" >dados coletados a partir de : 02/03/2020</p>
+                 </h1>   
                 </div>
 </div>
 
@@ -1001,12 +1004,12 @@
 
        <div class="card"> 
             <div class=" d-flex justify-content-around" id="grafico">
-                <h1 class="display-4">Gráfico </h1>
+                <h1 class="display-4">Gráfico de Contaminação</h1>
             </div>
        
             <div class="card-body grafico">
                     
-                <h4>Dados atualizados mensalmente!</h4>
+            <h4>Dados exclusivamente de Mesquita/Rj<br><br> atualizados mensalmente!</h4>
                 <canvas id="myChart"></canvas>
 
             </div>
@@ -1050,7 +1053,7 @@
                                         echo $alert->getErroTel();
                                     }    
                                 ?>
-                                <input type="text" name="tel" class="form-control" id="celular" placeholder="21999999999."><br>
+                                <input type="text" name="tel" class="form-control" id="celular" placeholder="21999999999." onkeypress="$(this).mask('(00) 00000.0000');"><br>
                             </div> 
 
                             
@@ -1067,6 +1070,10 @@
                                     <option value="Selecione">Selecione seu sexo</option>
                                     <option value="masculino">Masculino</option>
                                     <option value="feminino">Feminino</option>
+                                    <option value="Não Binário">Não Binário</option>
+                                    <option value="Cisgênero">Cisgênero</option>
+				<option value="Outros">Outros</option>
+                                    
                                 </select><br>
                             </div>
 
@@ -1078,7 +1085,7 @@
                                         echo $alert->getErroSexo();
                                     }    
                                 ?>
-                                <input type="text" name="cep">
+                                <input placeholder="21999999" type="text" name="cep" onkeypress="$(this).mask('00000-000');">
                             </div>        
                             
                            
@@ -1136,10 +1143,10 @@
                                     <option value="Selecione">Selecione o motivo</option>
                                    <option value="denuncia">Denuncia</option>
 					<option value="duvida">Dúvidas</option>
-					<option value="sugestao">Elogios</option>
-					<option value="denuncia">Solicitação</option>
+					<option value="elogios">Elogios</option>
+					<option value="solicitação">Solicitação</option>
 				   <option value="sugestao">Sugestão</option>
-                                    <option value="duvida">Outros</option>
+                                    <option value="outros">Outros</option>
                                 </select><br>
                             </div>
                         
@@ -1149,10 +1156,19 @@
                                 
                             </div> 
 
+		
+                <div class="  justify-content-around">
+			<div class="row">
+				<div class="col">
+				<button style="cursor: pointer;" type="button" class="btn-lg btn-color clear">Limpar</button>
+                   
 
-                <div class=" d-flex justify-content-around">
-                    <button type="submit" class="btn-lg btn-color">enviar</button>
-                                </div>
+                 </div>
+				<div class="col">
+                    <button type="submit" class="btn-lg btn-color">Enviar</button>
+                </div>
+				
+				</div>
                 </form>
             </div>       
 
@@ -1211,85 +1227,23 @@
 
       <!-- Grid column -->
       <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1 ">
-      <h5 class="font-weight-bold text-uppercase mb-4" >Veja também </h5>
+      <h5 class="font-weight-bold text-uppercase mb-4" >CURTA NO FACEBOOK! </h5>
       <div class="d-flex justify-content-around">
-      <iframe width="100%" height="300rem" src="https://www.youtube.com/embed/ivJaW4mIYzE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<div class="fb-page" data-href="https://www.facebook.com/prefmesquitaboletimcovid19/" data-tabs="timeline" data-width="425" data-height="325" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/prefmesquitaboletimcovid19/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/prefmesquitaboletimcovid19/">Prefeitura de Mesquita Boletim Coronavirus</a></blockquote></div>
       </div>  
     </div>
-      <!-- Grid column -->
-
 
       <!-- Grid column -->
-      <div class="col-md-4 col-lg-4 text-center  my-4">
-
-        <!-- Social buttons -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Siga nossas redes </h5>
-
-        <div class="row">   
-            <div class="col">
-                             
-                             
-           <!-- youtube -->
-           <a href="https://www.youtube.com/channel/UCXgKyvQithT0D1IrEsMMfrg?view_as=subscriber&sub_confirmation=1">
-                         
-                         <i class="fa fa-youtube " aria-hidden="true"></i>
-                           
-                          
-                          <div class="title">
-                              <h6 class="social" style="color:white; text-decoration:none;">Youtube</h4>
-                          </div>
-                          </a>                        
-           
-            <!-- whatsapp -->
-            <a href="https://chat.whatsapp.com/HQ6ES5kycNA8aVJDN3Lnz8" >
-                                <i class="fa fa-whatsapp " aria-hidden="true"></i>
-                                        
-                            
-                                <div class="title">
-                                    <h6 class="social" style="color:white; text-decoration:none;">Whatsapp</h4>
-                                </div>
-                                </a>
-
-            <!-- Facebook -->
-            <a href="https://bit.ly/3fWbhfC" ><i class="fa fa-facebook " aria-hidden="true"></i>
-                                
-                                <div class="title">
-                                    <h6 class="social" style="color:white; text-decoration:none;">Facebook</h4>
-                                </div>
-                                
-                                </a>
-
+ <!-- Grid column -->
+ <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1 ">
+      <h5 class="font-weight-bold text-uppercase mb-4" >SIGA-NOS NO TWITTER </h5>
+      <div class="d-flex justify-content-around">
+	
+      <a class="twitter-timeline" data-width="420" data-height="320" href="https://twitter.com/pmmcovid19?ref_src=twsrc%5Etfw">Tweets by pmmcovid19</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>  
     </div>
-        <div class="col">
-            <!-- instagram -->
-            <a href="https://www.instagram.com/prefmesquitacovid19/" >
-                                    <i class="fa fa-instagram " aria-hidden="true"></i>
-                                    
-                                <div class="title">
-                                    <h6 class="social" style="color:white; text-decoration:none;">Instagram</h4>
-                                </div>
-                                </a>
-            <!-- twitter-->
-            <a href="https://twitter.com/pmmcovid19"> <i class="fa fa-twitter " aria-hidden="true"></i>
-                            
-                            <div class="title">
-                                <h6 class="social" style="color:white; text-decoration:none;">Twitter</h4>
-                            </div>
-                            
-                            </a>   
-            <!-- linkedin -->
-            <a href="https://www.linkedin.com/company/prefeitura-de-mesquita-boletim-coronav%C3%ADrus/">
-                            <i class="fa fa-linkedin-square " aria-hidden="true"></i>
-                                    
-                            
-                            <div class="title">
-                                <h6 class="social" style="color:white; text-decoration:none;">LinkedIn</h4>
-                            </div>
-      </a>
-                                </div>
-        </div>
 
-      </div>
       <!-- Grid column -->
 
     </div>

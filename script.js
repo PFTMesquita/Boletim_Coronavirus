@@ -13,3 +13,14 @@ linksInternos.forEach(link=> {
     })
 })
 
+const buttonClear = document.querySelector(".clear");
+
+function clearButton() {
+    buttonClear.addEventListener("click", (e)=> {
+        document.querySelectorAll("form input").forEach(e => [
+            e.value = ""
+        ])
+    })
+}
+
+clearButton()
