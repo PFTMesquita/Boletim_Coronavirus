@@ -1,0 +1,965 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+    
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color:#e5e2eb !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*  cards atuais */
+.card-box {
+    position: relative;
+    color: #3e276a;
+    padding: 10px 10px 10px;
+    margin: 10px 0px;
+    border-radius: 20px;
+}
+.card-box:hover {
+    text-decoration: none;
+    color: #00c0ef;
+}
+.card-box:hover .icon i {
+    font-size: 80px;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+.card-box .inner {
+    padding: 5px 10px 0 10px;
+}
+.card-box h3 {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    white-space: nowrap;
+    padding: 0;
+    text-align: left;
+}
+.card-box p {
+    font: 16px bold;
+    color: #817a8b;
+    
+}
+.card-box .icon {
+    position: absolute;
+    top: auto;
+    bottom: 5px;
+    right: 5px;
+    z-index: 0;
+    font-size: 72px;
+    color: rgba(0, 0, 0, 0.096);
+}
+.card-box .card-box-footer {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    padding: 3px 0;
+    color: #3e276a;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-decoration: none;
+}
+.card-box:hover .card-box-footer {
+    background: rgba(0, 0, 0, 0.3);
+}
+.
+
+.bg-white {
+    background-color: #c9c5d3 !important;
+}
+
+#header-row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+
+/*  fim cards */
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+}
+.header-content {
+    color:#D1C723;
+    background-color: #3e276a;
+    font-size: 1.2rem;
+
+}
+.logo {
+    margin:2px;
+}
+
+
+.footer-content {
+    color:#D1C723;
+    background-color: #3e276a;
+    font-size: 1.4rem;
+
+}
+
+.social-sup a, .social-sup a:hover  {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+.fa-navicon {
+    color: #fff;
+}
+
+.img-fluid {
+    width: 100%;
+    max-width: 60px;
+    align-items: start;
+    margin-top: 0;
+}
+.img-fluid2 {
+    max-width: 17rem;
+    align-items: start;
+    margin-top: 0;
+}
+
+/*********  NAV *****************/
+.purple-bar{
+    background-color: #3e276a;
+    color:#ffffff;
+    font-size: 1.2rem;
+    min-height: 90px;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+
+}
+
+
+.navbar-toggler {
+
+    z-index: 999;
+    background-color:#ffffff;
+
+}
+.navbar-toggler-icon {
+
+    background-color:#ffffff;
+
+}
+
+.princ {
+
+    margin: 0 5px 0 5px;
+    color: white;
+
+}
+
+.princ:hover {
+
+    margin: 0 5px 0 5px;
+    color: #3e276a;
+    background-color:#ffffff;
+ 
+}
+
+.horizontal-center {
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+.coronavirus:hover,.sintomas:hover, .prevencao:hover, .prevencao:hover , .tratamento:hover, .grafico:hover, .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+.sobreTitulo {
+    margin-top: -10px;
+}
+
+/*********** CARDS **************/
+
+
+.display-4 {
+    font-weight: bolder !important;
+    color:#272152;
+    line-height: 1.5 !important;
+}
+.cards {
+    display: flex;
+    margin-top: 50px;
+    align-content: space-between;
+    overflow:hidden;
+}
+
+.card {
+    margin: 2% 0 2% 0;
+    padding:2% 0 2% 0;
+    border-radius: 1rem!important;
+    
+}
+
+.cards .card {
+    background-color: white;
+    border-left: 3px solid #3E276A;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 0 2% 0 2%;
+    transition: all 1s;
+}
+
+.cards-dados {
+    width: 25%!important;
+    margin-bottom:1% !important;
+
+}
+
+.card .card-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card h4 {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+.card span {
+    font-weight: bold;
+    
+    
+}
+
+.card .confirmados-titulo {
+    color: #1CC88A;
+}
+
+.card .total-mortos-titulo {
+    color: #4E73DF;
+}
+
+.card .taxa-mortalidade-titulo {
+    color: #FFA74C;
+}
+
+
+.card .total-mortos-titulo {
+    color: #4E73DF;
+}
+
+.card-contain {
+    margin: 0 8%!important;
+}
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
+
+
+.card-header {
+    background-color: #3E276A !important;
+    font-size: 1.9rem !important;
+    color: #fff !important;
+}
+
+/*********** CORONAVIRUS *****************/
+
+.coronavirus {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border-left: 3px solid #1CC88A;
+    transition: all 1s;
+}
+
+.coronavirus-container h1 {
+    padding: 20px 0px 0px 0;
+    color: #1CC88A;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.coronavirus-container > p {
+    max-width: 90%;
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+/**************** SINTOMAS ************/
+
+.sintomas {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border-left: 3px solid #4E73DF;
+    transition: all 1s;
+}
+
+.sintomas-container h1 {
+    padding: 20px 0px 0px 0;
+    color: #4E73DF;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.sintomas-container > p {
+    max-width: 90%;
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.sintomas-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.sintomas-container h3 {
+    text-align: center;
+    color: #4E73DF;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.sintoma-card {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    flex-grow: 2;
+}
+
+.sintoma-card img {
+    background-color: #4E73DF;
+    border-radius: 50%;
+}
+
+.sintoma-card span {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/************** PREVENÇÃO **************/
+
+.prevencao {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border-left: 3px solid #B776E1;
+    transition: all 1s;
+}
+
+.prevencao-container h1 {
+    padding: 20px 0px 0px 0;
+    color: #B776E1;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.prevencao-container > p {
+    max-width: 90%;
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.prevencao-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.prevencao-container h3 {
+    text-align: center;
+    color: #B776E1;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.prevencao-card {
+    margin: 20px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    flex-grow: 2;
+}
+
+.prevencao-card img {
+    background-color: #B776E1;
+    border-radius: 50%;
+}
+
+.prevencao-card span {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/***************** TRATAMENTO ******************/
+
+.tratamento {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border-left: 3px solid #374078;
+    transition: all 1s;
+}
+
+.tratamento-container h1 {
+    padding: 20px 0px 0px 0;
+    color: #374078;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.tratamento-container > p {
+    max-width: 90%;
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+
+
+.tratamento .tratamento-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.tratamento-cards {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    flex-grow: 2;
+}
+
+.tratamento-cards img {
+
+    background-color: #374078;
+    border-radius: 50%;
+}
+
+
+
+/*********** GRAFICO ****************/
+
+.grafico {
+    margin-top: 10px;
+    margin-bottom: 70px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.grafico h1 {
+    padding: 20px 0px 20px 0px;
+    color: #3E276A;
+    text-align: center;
+}
+
+.grafico > h4 {
+    text-align: center;
+    color: red;
+    font-size: 14px;
+}
+.btn-color {
+    background-color: #3E276A;
+    color:#fff;
+    width:90%;
+}
+.btn-color:hover {
+    background-color: #8c77b7;
+}
+
+/************* FALE CONOSCO ****************/
+
+.fale-conosco {
+    margin-top: 70px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border-left: 3px solid #000000;
+    transition: all 1s;
+}
+
+
+.fale-conosco > h1 {
+    padding: 20px 0px 0px 0;
+    margin-bottom: 40px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+
+
+.fale-conosco label {
+    margin-top: 10px;
+}
+
+
+
+.erro  {
+    font-weight: bold;
+    color: red;
+    font-size: 0.8rem;
+}
+
+
+.img-size {
+    width: 180px;
+}
+
+
+.fale-conosco input[type=text],
+.fale-conosco input[type=number],
+.fale-conosco input[type=date],
+ .fale-conosco select, 
+ .fale-conosco textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+
+.option {
+    height:50px !important; 
+
+
+  }
+
+.motivo {
+    max-width:40% !important;
+}
+
+
+  /* accordion */
+
+.tabs ,.sub-tabs {
+    padding: 1.5rem 1.25rem;
+    background-color: #372559 ;
+    height: 5rem;
+    display: flex;
+    width: 90%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 0.1rem;
+    border-radius: 0.5rem!important;
+    
+}
+
+
+.tabs h1 ,.sub-tabs h1 {
+    color: #fff; 
+    font-size: 1.7rem !important;
+
+}
+.tabs a:hover ,.sub-tabs a:hover {
+
+    text-decoration: none !important;
+}
+
+.tabs {
+    margin: 2% 0 2% 0;
+}
+
+
+.item-box-blog {
+
+    height: 35rem;
+}
+
+
+.item-box-blog-image figure img {
+    height: 15rem !important;
+}
+
+
+footer {
+    background-color: #3E276A;
+}
+
+footer a{
+    text-decoration:none; 
+  }
+
+  
+  footer  .box-part{
+    
+      border-radius:0;
+      padding:12% 2%;
+  }
+  footer .text{
+      margin:20px 0px;
+  }
+  
+  footer  .fa{
+       color:#fff;
+  }
+    
+  .footer-copyright  {
+      border: solid 1px #1c132e;
+      font-size: 0.8rem !important;
+  }
+
+  hr {
+
+    border-top: none !important;
+  }
+.title {
+    font-size: 1.1rem !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+footer h5 {
+    color:#fff;
+}
+
+
+
+.cta-100 {
+    margin-top: 20px !important;
+
+}
+
+@media (min-width: 1350px) {
+    .ultimos {
+
+        padding: 0 10% 0 10% !important;
+    }
+
+}
+
+@media (min-width:425px) {
+
+.sobre {
+    padding:5rem !important;
+}
+
+}
+
+@media (max-width:425px) {
+    .header {
+        height: 300px;
+    }
+
+    .coronavirus-container h1 ,
+    .sintomas-container h1,
+    .prevencao-container h1,
+    .tratamento-container h1 {
+        font-size: 1.6rem;
+        
+    }
+
+    .logo {
+        max-width: 4rem!important;
+    }
+
+    .w-100 {
+        height: 50vh;
+    }
+    
+    .purple-bar{
+
+        font-size: 1.2rem;
+        min-height: 50px;
+
+    }
+    
+    .card-mob {
+        width:50% !important;
+    }
+    
+    .img-size {
+        width: 50px;
+    }
+
+    .horizontal-center {
+        width: 100%;
+    
+    }
+
+    .col-8 {
+        width:100% !important;
+    }
+
+    .header-content {
+        font-size: 0.8rem;
+    
+    }
+
+    .card h4 {
+        font-size: 0.6rem;
+    }
+
+    .img-fluid2 {
+        max-width: 17rem;
+
+    }
+    .option {
+ 
+        max-width:70% !important;
+    
+      }
+
+    .noticiasTitle {
+        font-size:2.0rem !important;
+    }
+
+    .tabs h1,.sub-tabs h1 {
+        font-size: 1.0rem !important;
+    }
+     .display-4 {
+            font-size: 2.0rem !important;
+        }
+
+        .card span {
+            font-size: 0.6rem;
+
+        }
+
+        .card-contain {
+            margin: 0 1%!important;
+        }
+
+        .cards-dados {
+            width:45% !important;
+        }
+
+        .blog .carousel-indicators {
+        
+            top: 97% !important;
+        
+        }
+        
+    #inicio .display-4 {
+        margin: 0 25% 0 25%;
+    }
+
+    .cards {
+        margin-top: 5%;
+    }
+
+    .slider {
+        
+        max-width: 100% !important;
+    }
+
+    .col-md-4 {
+        padding-bottom: 0!important;
+        max-width: 30%;
+    }
+
+    footer .col-md-4 {
+        max-width: 100% !important;
+    }
+
+
+
+}
+
+@media (min-width:34em) {
+    .cards > .card
+    {
+        width: 20%;
+        flex-wrap: wrap;
+        flex: initial; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.cta-100 {
+    margin-top: 100px;
+    padding-left: 8%;
+    padding-top: 7%;
+  }
+  .col-md-4{
+      padding-bottom:20px;
+  }
+  
+  .white {
+    color: #fff !important;
+  }
+  .mt{float: left;margin-top: -20px;padding-top: 20px;}
+  .bg-blue-ui {
+    background-color: #372559 !important;
+  }
+  figure img{width:300px;}
+  
+  #blogCarousel {
+    padding-bottom: 100px;
+  }
+  
+  .blog .carousel-indicators {
+    left: 0;
+    top: 90%;
+    height: 50%;
+  }
+  
+  
+  /* The colour of the indicators */
+  
+  .blog .carousel-indicators li {
+    background: #708198;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+  }
+  
+  .blog .carousel-indicators .active {
+    background: #372559;
+  }
+  
+  
+  
+  
+  .item-carousel-blog-block {
+    outline: medium none;
+    padding: 15px;
+  }
+  
+  .item-box-blog {
+    border: 1px solid #dadada;
+    text-align: center;
+    z-index: 4;
+    padding: 20px;
+  }
+  
+  .item-box-blog-image {
+    position: relative;
+  }
+  
+  .item-box-blog-image figure img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .item-box-blog-date {
+    position: absolute;
+    z-index: 5;
+    padding: 4px 20px;
+    top: -20px;
+    right: 8px;
+    background-color: #372559;
+  }
+  
+  .item-box-blog-date span {
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .item-box-blog-date span.mon {
+    font-size: 18px;
+  }
+  
+  .item-box-blog-date span.day {
+    font-size: 16px;
+  }
+  
+  .item-box-blog-body {
+    padding: 10px;
+  }
+  
+  .item-heading-blog a h5 {
+    margin: 0;
+    line-height: 1;
+    text-decoration:none;
+    transition: color 0.3s;
+  }
+  
+  .item-box-blog-heading a {
+      text-decoration: none;
+  }
+  
+  .item-box-blog-data p {
+    font-size: 13px;
+  }
+  
+  .item-box-blog-data p i {
+    font-size: 12px;
+  }
+  
+  .item-box-blog-text {
+    max-height: 30%;
+    overflow: hidden;
+  }
+  
+  .mt-10 {
+    float: left;
+    margin-top: -10px;
+    padding-top: 10px;
+  }
+  
+  .btn.bg-blue-ui.white.read {
+    cursor: pointer;
+    padding: 4px 20px;
+    float: left;
+    margin-top: 10px;
+  }
+  
+  .btn.bg-blue-ui.white.read:hover {
+    box-shadow: 0px 5px 15px inset #4d5f77;
+  }
+  
+  
+
+  
