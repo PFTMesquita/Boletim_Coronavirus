@@ -11,11 +11,12 @@ class Formulario {
     private $endereco;
     private $motivo;
     private $mensagem;
+    private $cep;
     
 
     private $pdo;
 
-    public function __construct($nome, $email, $tel, $nasc, $sexo, $end, $mot, $men) {
+    public function __construct($nome, $email, $tel, $nasc, $sexo, $end, $mot, $men, $cep) {
 
         try {
             $this->pdo = new PDO("mysql:dbname=coronaviruspmm;host=coronaviruspmm.mysql.dbaas.com.br", 'coronaviruspmm', 'pmmcorona2020');
@@ -31,7 +32,7 @@ class Formulario {
         $this->setEndereco($end);
         $this->setMotivo($mot);
         $this->setMensagem($men);
-
+        $this->setCep($cep);
     }
 
     public function addFormulario($postArray, $address, $setFrom, $mensagem, $titulo) {
@@ -44,7 +45,8 @@ class Formulario {
             sexo,
             endereco,
             motivo,
-            mensagem
+            mensagem,
+            cep
 
         ) VALUES 
         ( 
@@ -55,8 +57,8 @@ class Formulario {
             :sexo,
             :endereco,
             :motivo,
-            :mensagem
-            
+            :mensagem,
+            :cep
         )");
 
         foreach($postArray as $key => $value) {
@@ -137,6 +139,13 @@ class Formulario {
     }
     private function setMensagem($mensagem) {
         $this->mensagem = $mensagem;
+    }
+
+    public function getCep() {
+        return $this->cep;
+    }
+    private function setCep($cep) {
+        $this->cep = $cep;
     }
 
 /*    public function getDuvidas() {

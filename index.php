@@ -1069,6 +1069,17 @@
                                     <option value="feminino">Feminino</option>
                                 </select><br>
                             </div>
+
+                            <div class="form-group">   
+                                <label  for="cep">Cep:</label><br>
+                                <?php 
+                                    if(isset($_GET['erroSexo'])) {
+                                        $alert->setErroSexo();
+                                        echo $alert->getErroSexo();
+                                    }    
+                                ?>
+                                <input type="text" name="cep">
+                            </div>        
                             
                            
                         </div>

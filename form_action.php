@@ -7,7 +7,7 @@ $postArray = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRIPPED);
 $address = [
         
         'weslleyadesousa@gmail.com',
-
+        
 ];
 
 if($postArray) {
@@ -36,6 +36,9 @@ if($postArray) {
     elseif($postArray['mensagem'] == "" ) {
         $_SESSION['erroForm']['mensagemInvalida'] = "<p class='erro'> Por favor, digite uma mensagem válida!</p>";;
     }
+    elseif($postArray['cep'] == "") {
+        $_SESSION['erroForm']['cepInvalido'] = "<p class='erro'> Por favor, digite um cep válido </p>";
+    }
  /*   
     elseif($postArray['denuncia'] == "") {
         $_SESSION['erroForm']['denunciaInvalida'] = "<p class='erro'> Por favor, informe uma denuncia válida!</p>";
@@ -53,7 +56,8 @@ if($postArray) {
             $postArray['sexo'],
             $postArray['endereco'],
             $postArray['motivo'],
-            $postArray['mensagem']
+            $postArray['mensagem'],
+            $postArray['cep']
            /* $postArray['duvidas'] */
 
         );
@@ -95,6 +99,11 @@ if($postArray) {
             <fieldset style='margin-top: 20px;'>
                 <legend style='font-size: 22px; font-weight: bold;'>Motivo do Contato:</legend>
                 <p style='font-size: 18px;'>{$formulario->getMensagem()}</p>
+            </fieldset>
+
+            <fieldset style='margin-top: 20px;'>
+                <legend style='font-size: 22px; font-weight: bold;'>CEP:</legend>
+                <p style='font-size: 18px;'>{$formulario->getCep()}</p>
             </fieldset>
         </div>";
 

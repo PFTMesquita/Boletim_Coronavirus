@@ -46,12 +46,9 @@ $dadosHoje = [
     'descartadosClinicosHoje' => $descartadosClinicosHoje = $descartadosClinicos - $read[0]['descartadosClinico']
 ];
 
-if($date['hours'] == 12) {
+if($date['hours'] == 23) {
     $dadosCorona->update($obitos, $suspeitosComTeste, $descartadosComTeste, $descartados, $descartadosClinicos, $confirmados);
-    echo "Tabela deu update";
-} else {
-    echo "Tabela ainda não foi atualziada";
-}
+} 
 
 $format = [
     '0.0',
